@@ -8,6 +8,10 @@ function nowServing(katzDeliLine) {
   return `Currently serving ${custServed}.`;
 }
 
+function orderOfLine(index) {
+  return `${index + 1}. ${katzDeliLine[index]}`;
+}
+
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length != 0) {
 
@@ -24,8 +28,4 @@ function currentLine(katzDeliLine) {
   } else {
     return 'The line is currently empty.';
   }
-}
-
-function orderOfLine(index) {
-  return `${index + 1}. ${katzDeliLine[index]}`;
 }
