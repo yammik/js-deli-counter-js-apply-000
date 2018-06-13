@@ -13,9 +13,9 @@ function currentLine(katzDeliLine) {
     var result = 'The line is currently: ';
     for (var i = 0; i < katzDeliLine; i += 1) {
       if (i === katzDeliLine.length - 1) {
-        result += orderOfLine(i, katzDeliLine[i]);
+        result += orderOfLine(i);
       } else {
-        result += `${orderOfLine(i, katzDeliLine[i])}, `
+        result += `${orderOfLine(i)}, `
       }
     }
   } else {
@@ -23,6 +23,6 @@ function currentLine(katzDeliLine) {
   }
 }
 
-function orderOfLine(index, name) {
-  return `${index + 1}. ${name}`;
+function orderOfLine(index) {
+  return `${index + 1}. ${katzDeliLine[index]}`;
 }
