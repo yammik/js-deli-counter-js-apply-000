@@ -11,13 +11,14 @@ function nowServing(katzDeliLine) {
   return `Currently serving ${custServed}.`;
 }
 
-function orderOfLine(index) {
-  return `${index + 1}. ${katzDeliLine[index]}`;
-}
 
 function currentLine(katzDeliLine) {
+  function orderOfLine(index) {
+    return `${index + 1}. ${katzDeliLine[index]}`;
+  }
+
   if (katzDeliLine.length != 0) {
-    
+
     var result = 'The line is currently: ';
     for (var i = 0; i < katzDeliLine.length; i += 1) {
       if (i === katzDeliLine.length - 1) {
