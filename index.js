@@ -9,8 +9,8 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
-    
+  if (katzDeliLine.length != 0) {
+
     var result = 'The line is currently: ';
     for (var i = 0; i < katzDeliLine; i += 1) {
       if (i === katzDeliLine.length - 1) {
