@@ -28,5 +28,5 @@ function currentLine(katzDeliLine) {
   //   }
   //
   //   return result;
-  }
+  //}
 }
