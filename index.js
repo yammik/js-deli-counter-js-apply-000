@@ -13,6 +13,9 @@ function orderOfLine(index) {
 }
 
 function currentLine(katzDeliLine) {
+  if (katzDeliLine.length === 0) {
+    return 'The line is currently empty.';
+  }
   if (katzDeliLine.length != 0) {
 
     var result = 'The line is currently: ';
@@ -25,7 +28,5 @@ function currentLine(katzDeliLine) {
     }
 
     return result;
-  } else {
-    return 'The line is currently empty.';
   }
 }
